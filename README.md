@@ -6,7 +6,7 @@ Simple Sidekiq Add-on to enqueue jobs to other applications.
 
 Add this line to your application's Gemfile:
 
-    gem 'sidekiq_remote_enqueuer'
+    gem 'sidekiq_remote_enqueuer', :git => 'git@github.com:geisonbiazus/sidekiq-remote-enqueuer.git'
 
 And then execute:
 
