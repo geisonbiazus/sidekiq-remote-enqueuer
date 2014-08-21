@@ -12,13 +12,9 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install sidekiq_remote_enqueuer
-
 ## Usage
 
-TODO: Write usage instructions here
+    Sidekiq::RemoteEnqueuer.enqueue_to 'queue', 'RemoteWorkerClass', args
 
 ## Contributing
 
