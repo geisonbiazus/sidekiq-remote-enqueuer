@@ -5,7 +5,7 @@ module Sidekiq
   class RemoteEnqueuer
     def self.enqueue_to(queue, klass, *args)
 
-      item = {:queue => queue, :class => klass.to_s, :retry => false, :args => args}
+      item = { queue: queue, class: klass.to_s, retry: false, args: args}
 
       pushed = false
       payload = Sidekiq.dump_json(item)
@@ -20,4 +20,3 @@ module Sidekiq
     end
   end
 end
-
